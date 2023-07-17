@@ -59,9 +59,9 @@ function payerurl_link($PARAMS) {
         'amount' => $invoicetotal,
         'currency' => empty($PARAMS['currency'])? "usdt" : strtolower($PARAMS['currency']),
         'items' => [0 => $items ],
-        'billing_fname' => empty($PARAMS['clientdetails']['firstname']) ? "":trim($PARAMS['clientdetails']['firstname']),
-        'billing_lname' => empty($PARAMS['clientdetails']['lastname']) ? "":trim($PARAMS['clientdetails']['lastname']),
-        'billing_email' => empty($PARAMS['clientdetails']['email']) ? "" : trim($PARAMS['clientdetails']['email']),
+        'billing_fname' => empty($PARAMS['clientdetails']['firstname']) ? "undefine":trim($PARAMS['clientdetails']['firstname']),
+        'billing_lname' => empty($PARAMS['clientdetails']['lastname']) ? "undefine":trim($PARAMS['clientdetails']['lastname']),
+        'billing_email' => empty($PARAMS['clientdetails']['email']) ? "undefine@gmail.com" : trim($PARAMS['clientdetails']['email']),
         'redirect_to' => $PARAMS['systemurl'] . 'settings/statement',
         'cancel_url' => substr_replace($PARAMS['systemurl'],"",-1).$_SERVER['REQUEST_URI'] . '',  // replace last '/' from systemurl
         'notify_url' => $PARAMS['systemurl'] . 'payerurl_res.php',
