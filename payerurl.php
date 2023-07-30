@@ -23,6 +23,7 @@ function payerurl_config() {
         'name' => array('Type' => 'System','Value' => 'USDT, ETH, BTC, Binance Pay'),
         'payerurl_public_key' => array('Name'=>'Payerurl Public Key', 'Type' => 'text','Value' => '','Size' => '40','Description' => '<a href="https://dashboard.payerurl.com/" target="_blank" style="color:blue;">Get API Public and Secret key</a>'),
         'payerurl_secret_key' => array('Name'=>'Payerurl Secret Key', 'Type' => 'text','Value' => '','Size' => '40'),
+		'trc20_network_fee' => array('Name'=>'TRC20 Network Fee', 'Type' => 'text','Value' => '1','Size' => '10'),
         'email' => array('Name' => 'Payerurl Email','Type' => 'text','Size' => '40','Description' => 'Login Mail.'),
         'SendBox' => array('Name' => 'Demo Mode SendBox ','Type' => 'yesno'),
         'info' => array('Name' => 'Other Information','Type' => 'textarea','Cols' => '5','Rows' => '10')
@@ -35,7 +36,11 @@ function payerurl_link($PARAMS) {
     $code = '';
     $invoiceid = $PARAMS['invoiceid'];
     $invoicetotal = $PARAMS['amount'];
+	$trc20_network_fee = $PARAMS['trc20_network_fee'];
+	$trc20_network_fee = formatCurrency2($trc20_network_fee);
     $invoicetotal = formatCurrency2($invoicetotal);
+	
+$invoicetotal = $invoicetotal + $trc20_network_fee;
 
     // $args = [
     //     'order_id' => $invoiceid,
