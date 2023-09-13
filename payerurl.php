@@ -35,6 +35,7 @@ function payerurl_link($PARAMS) {
     global $lng_languag;
     $code = '';
     $invoiceid = $PARAMS['invoiceid'];
+    $invoiceWithoutFee = $PARAMS['amount'];
     $invoicetotal = $PARAMS['amount'];
 	$trc20_network_fee = $PARAMS['trc20_network_fee'];
 	$trc20_network_fee = formatCurrency2($trc20_network_fee);
@@ -53,12 +54,12 @@ $invoicetotal = $invoicetotal + $trc20_network_fee;
     //     'notify_url' => $PARAMS['systemurl'] . 'modules/gateways/callback/payerurl.php',
     //     'type' => 'dhru',
     // ];
-
-
-   // $feeCalc =  $invoicetotal/100;
-    // $PARAMS['description'] = "Invoice Amount: $invoicetotal <br>"."TRC20 fee: $trc20_network_fee <br><br>";
+    
+    //$feeCalc =  $invoicetotal/100;
+    $PARAMS['description'] = "Invoice Amount: $invoiceWithoutFee <br>"."TRC20 fee: $trc20_network_fee <br><br>";
+    
     $items = array(  'name' => empty($PARAMS['description']) ? "":trim($PARAMS['description']),
-                     'qty' => 1,
+                      'qty' => 1,
                      'price' => $invoicetotal,
                 );
     
