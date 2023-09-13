@@ -53,7 +53,10 @@ $invoicetotal = $invoicetotal + $trc20_network_fee;
     //     'notify_url' => $PARAMS['systemurl'] . 'modules/gateways/callback/payerurl.php',
     //     'type' => 'dhru',
     // ];
-    
+
+
+   // $feeCalc =  $invoicetotal/100;
+    // $PARAMS['description'] = "Invoice Amount: $invoicetotal <br>"."TRC20 fee: $trc20_network_fee <br><br>";
     $items = array(  'name' => empty($PARAMS['description']) ? "":trim($PARAMS['description']),
                      'qty' => 1,
                      'price' => $invoicetotal,
