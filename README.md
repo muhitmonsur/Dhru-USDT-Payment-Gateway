@@ -25,8 +25,11 @@
 - Click on “save” and you will see a successfully installed  notification. 
 - now are ready to accept USDT payment getway automatic
 
-  ## Complete Installation video guide (5 minutes video)
-  [https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/](https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/)
+
+## Complete Installation video guide (5 minutes video)
+[https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/](https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/)
+
+
 
 
 ## About Payerurl
