@@ -1,17 +1,11 @@
-# How to setup
-Paste: Payerurl.php file in "/public_html/modules/gateways" folder
-And 
-Paste: payerurl_res.php file in /public_html/ folder
+# USDT Payment Gateway for DHRU Fusion, automatic add credit
 
+## Features
 
-#config on admin settings
-------------------------
-active gateway plugin "USDT,BTC,ETH,Binance pay"
-go to gateway settings and put api key and secret key
-to collect api key and secret key dashboard.payerurl.com
-paste the api credencials and save
+🔸 Binance Pay, USDT TRC20, BTC, ETH ERC20
+🔸 Received customer payment direct to your crypto wallet.
+🔸 Easy signup, registration, and API key integration on http://payerurl.com
+🔸 24/7 customer support in the integration of ABC Crypto checkout contact us telegram: https://t.me/Payerurl
 
-for official support:  https://t.me/Payerurl
-
-
-
+## About Payerurl
+payerurl.com is an international provider of online crypto currency payment solutions. Furthermore, Payerurl is a crypto gateway that sends customer payments directly to merchant wallets and notifies merchants when a payment is made by a customer. It also automatically converts merchant order status to processing.
