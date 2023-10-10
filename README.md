@@ -29,7 +29,7 @@
 ## Complete Installation video guide (5 minutes video)
 [https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/](https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/)
 
-
+[![Watch the video](https://ibb.co/D89Py95)](https://www.youtube.com/watch?v=TXgq3K7PgEo)
 
 
 ## About Payerurl
