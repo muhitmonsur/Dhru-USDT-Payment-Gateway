@@ -1,4 +1,5 @@
-z# USDT Payment Gateway for DHRU Fusion, automatic add credit
+
+# USDT Payment Gateway for DHRU Fusion, automatic add credit
 
 ## Features
 
@@ -33,5 +34,5 @@ z# USDT Payment Gateway for DHRU Fusion, automatic add credit
 
 
 ## About Payerurl
-[payerurl.com](https://payerurl.com) is an international provider of online crypto currency payment solutions. Furthermore, Payerurl is a crypto gateway that sends customer payments directly to merchant wallets and notifies merchants when a payment is made by a customer. It also automatically converts merchant order status to processing.
+[payerurl.com](https://payerurl.com) is an international provider of online crypto currency payment solutions. Furthermore, Payerurl is a crypto gateway that sends customer payments directly to merchant wallets and notifies merchants when a payment is made by a customer. It also automatically add credit to customer account after payment done.
 
