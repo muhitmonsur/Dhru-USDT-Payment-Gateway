@@ -79,8 +79,8 @@ $invoicetotal = $invoicetotal + $trc20_network_fee;
     
     ksort($args);
     $args = http_build_query($args);
-    $signature = hash_hmac('sha256', $args, $PARAMS['payerurl_secret_key']);
-    $authStr = base64_encode(sprintf('%s:%s', $PARAMS['payerurl_public_key'], $signature));
+    $signature = hash_hmac('sha256', $args, trim($PARAMS['payerurl_secret_key']));
+    $authStr = base64_encode(sprintf('%s:%s', trim($PARAMS['payerurl_public_key']), $signature));
     // var_dump($authStr);
     // exit(0);
     
