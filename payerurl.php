@@ -20,7 +20,7 @@ defined("DEFINE_MY_ACCESS") or die ('<h1 style="color: #C00; text-align: center;
 
 function payerurl_config() {
     $configarray = array(						
-        'name' => array('Type' => 'System','Value' => 'USDT, ETH, BTC, Binance Pay'),
+        'name' => array('Type' => 'System','Value' => 'USDT, ETH, BTC, Binance Pay(Payerurl)'),
         'payerurl_public_key' => array('Name'=>'Payerurl Public Key', 'Type' => 'text','Value' => '','Size' => '40','Description' => '<a href="https://dashboard.payerurl.com/" target="_blank" style="color:blue;">Get API Public and Secret key</a>'),
         'payerurl_secret_key' => array('Name'=>'Payerurl Secret Key', 'Type' => 'text','Value' => '','Size' => '40'),
 		'trc20_network_fee' => array('Name'=>'TRC20 Network Fee', 'Type' => 'text','Value' => '1','Size' => '10'),
