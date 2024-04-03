@@ -55,8 +55,8 @@ $invoicetotal = $invoicetotal + $trc20_network_fee;
     //     'type' => 'dhru',
     // ];
     
-    //$feeCalc =  $invoicetotal/100;
-    $PARAMS['description'] = "Invoice Amount: $invoiceWithoutFee <br>"."TRC20 fee: $trc20_network_fee <br><br>";
+        //$feeCalc =  $invoicetotal/100;
+    $PARAMS['description'] = "Invoice Amount: $invoiceWithoutFee <br>"."TRC20 fee: $trc20_network_fee USDT<br>Credit conversion fee: 1% <br>Item qty: ";
     
     $items = array(  'name' => empty($PARAMS['description']) ? "":trim($PARAMS['description']),
                       'qty' => 1,
