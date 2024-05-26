@@ -91,7 +91,7 @@ $invoicetotal = $invoicetotal + $trc20_network_fee;
     
     
     $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, 'https://dashboard.payerurl.com/api/payment');
+    curl_setopt($ch, CURLOPT_URL, 'https://api-v2.payerurl.com/api/payment');
     curl_setopt($ch, CURLOPT_POST, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
