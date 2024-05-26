@@ -21,7 +21,7 @@
 - Log in to your domain DHRU Fusion admin panel, click on settings> payment Gateways 
 - Search the file ” USDT, ETH, BTC, Binance pay ” and click on active 
 - In edit gateway you need to paste Payerurl public key & Secret key 
-- Log in to the [payerurl dashboard] (https://dashboard.payerurl.com) , click on Get API key Credentials > Generate new API keys. (If you don’t have any account please click on “Create account” to register at first)  
+- Log in to the [payerurl dashboard] (https://dash.payerurl.com) , click on Get API key Credentials > Generate new API keys. (If you don’t have any account please click on “Create account” to register at first)  
 - Copy the public key & Secret key and paste it to DHRU Fusion USDT, ETH, BTC, Binance pay Edit module 
 - Click on “save” and you will see a successfully installed  notification. 
 - now are ready to accept USDT payment getway automatic
