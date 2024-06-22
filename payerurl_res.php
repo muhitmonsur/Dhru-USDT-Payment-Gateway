@@ -62,7 +62,7 @@ $log_msg .= "auth[0]".$auth[0]."\n";
 $log_msg .= "auth[1]".$auth[1]."\n";
 
 
-if($GATEWAY['payerurl_public_key'] != $auth[0])
+if(trim($GATEWAY['payerurl_public_key']) != trim($auth[0]))
 {
         $data = [ 
         'message' => "Credentials no match",
