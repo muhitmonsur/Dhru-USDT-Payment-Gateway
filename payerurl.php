@@ -123,7 +123,7 @@ fclose($fh);
     if($httpCode === 200 && isset($response->redirectTO) && !empty($response->redirectTO)){
         $code = '<a class="btn btn-primary pt-3 pb-3" href="'.$response->redirectTO.'">'.$lng_languag["invoicespaynow"].'</a>';
     } else {
-        $code = '<p style="color:red;">An error occurred, Make sure that you filled the First Name, Last Name, email to your profile or contact us : Contact Us: https://t.me/Payerurl</p>';
+        $code = '<p style="color:red;">An error occurred</p>';
     }
     return $code;
 }
