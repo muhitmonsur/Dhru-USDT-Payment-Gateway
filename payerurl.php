@@ -1,23 +1,6 @@
 <?php
 defined("DEFINE_MY_ACCESS") or die ('<h1 style="color: #C00; text-align: center;"><strong>Restricted Access</strong></h1>'); 
 
-
-//in the folder public_html/templates/default  client_addfunds.tpl file has to be change 
-//add  id="adfundSelector" to the submit button
-/*        $( "#adfundSelector" ).on( "click", function() {
-            if(!$('#custom-gateway').is(':checked')) 
-            { 
-                alert( "Please select at least one peyment method (rounded circle on the left)." );
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-
-        });
-*/        
-
 function payerurl_config() {
     $configarray = array(						
         'name' => array('Type' => 'System','Value' => 'USDT, ETH, BTC, Binance Pay(Payerurl)'),
@@ -42,20 +25,8 @@ function payerurl_link($PARAMS) {
     $invoicetotal = formatCurrency2($invoicetotal);
 	
 $invoicetotal = $invoicetotal + $trc20_network_fee;
-
-    // $args = [
-    //     'order_id' => $invoiceid,
-    //     'amount' => $invoicetotal,
-    //     'currency' => strtolower($PARAMS['currency']),
-    //     'billing_fname' => $PARAMS['clientdetails']['firstname'],
-    //     'billing_lname' => $PARAMS['clientdetails']['lastname'],
-    //     'billing_email' => $PARAMS['clientdetails']['email'],
-    //     'redirect_to' => $PARAMS['systemurl'] . 'addfunds',
-    //     'notify_url' => $PARAMS['systemurl'] . 'modules/gateways/callback/payerurl.php',
-    //     'type' => 'dhru',
-    // ];
-    
-        //$feeCalc =  $invoicetotal/100;
+   
+    //$feeCalc =  $invoicetotal/100;
     $PARAMS['description'] = "Invoice Amount: $invoiceWithoutFee <br>"."TRC20 fee: $trc20_network_fee USDT<br>Item qty: ";
     
     $items = array(  'name' => empty($PARAMS['description']) ? "":trim($PARAMS['description']),
@@ -73,7 +44,7 @@ $invoicetotal = $invoicetotal + $trc20_network_fee;
         'billing_email' => empty($PARAMS['clientdetails']['email']) ? "undefine@gmail.com" : trim($PARAMS['clientdetails']['email']),
         'redirect_to' => $PARAMS['systemurl'] . 'settings/statement',
         'cancel_url' => substr_replace($PARAMS['systemurl'],"",-1).$_SERVER['REQUEST_URI'] . '',  // replace last '/' from systemurl
-        'notify_url' => $PARAMS['systemurl'] . 'payerurl_res.php',
+        'notify_url' => $PARAMS['systemurl'] . 'payerurl_res.php',  // PayerURL will send a callback to this URL once the payment is successfully completed.
         'type' => 'dhru',
     ];
     
