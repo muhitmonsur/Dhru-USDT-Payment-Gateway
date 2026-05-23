@@ -31,6 +31,20 @@
 
 ---
 
+### Binance QR Code Payment
+
+<img src="https://raw.githubusercontent.com/muhitmonsur/assets/refs/heads/main/screenshot-5.png">
+
+This package is the ideal solution for developers seeking a secure Binance payment integration for Node.js and Express.js. Binance payment is a contactless, borderless, and highly secure payment method. By using this package, you can accept payments via Binance QR codes and process transactions through the Binance personal account API.
+
+The package serves as a seamless bridge between Binance and your Node.js application. Customers simply scan the QR code on your checkout page to finish the transaction. This process is:
+
+* **Fast and Simple**: No complex redirects or external logins for the user.
+* **Cost-Effective**: Incurs no network fees or additional hidden costs.
+* **Secure**: Enhanced security protocols help avoid scams and ensure transaction safety.
+
+---
+
 ## 📦 Installation
 
 ### Step 1 — Download the Plugin
