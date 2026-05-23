@@ -4,7 +4,7 @@
 
 **Powered by [PayerURL](https://payerurl.com)** — the direct-to-wallet crypto payment processor for DHRU Fusion.
 
-🔴 **[LIVE DEMO](https://payerurl.com/dhru-fusion-usdt-payment-gateway-plugin/)** | 🔑 **[Get API Key](https://dash.payerurl.com)** | 💬 **[Telegram Support](https://t.me/Payerurl)**
+ 🔑 **[Get API Key](https://dash.payerurl.com)** | 💬 **[Telegram Support](https://t.me/Payerurl)**
 
 ---
 
