@@ -24,7 +24,7 @@
 
 ## 🔸 Features
 
-- 🔸 Binance Pay, USDT TRC20, BTC, ETH ERC20
+- 🔸 Binance Pay, (USDT TRC20,BEP20,ERC20),(USDC BEP20,ERC20),  BTC, ETH ERC20
 - 🔸 Received customer payment direct to your crypto wallet
 - 🔸 Easy signup, registration, and API key integration on [payerurl.com](https://payerurl.com)
 - 🔸 24/7 customer support — contact us on Telegram: [t.me/Payerurl](https://t.me/Payerurl)
@@ -96,11 +96,12 @@ You will see a **"Successfully Installed"** notification — you are now ready t
 
 | Currency | Networks |
 |---|---|
-| **USDT** | TRC20 (Tron), ERC20 (Ethereum) |
-| **USDC** | ERC20 (Ethereum) |
+| **Binance Pay** | Binance QR Code |
+| **USDT** | TRC20 (Tron), BEP20 (Binance smart chain), ERC20 (Ethereum) |
+| **USDC** | ERC20 (Ethereum),BEP20 (Binance smart chain) |
 | **Bitcoin (BTC)** | Bitcoin Network |
 | **Ethereum (ETH)** | ERC20 |
-| **Binance Pay** | Binance QR Code |
+
 
 ---
 
